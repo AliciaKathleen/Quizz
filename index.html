@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Quizz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <nav class="navbar"></nav>
+      </header>
+      <div class="container">
+        <section class="quiz-section">
+          <div class="quiz-box">
+            <h1>Dev<strong>Quiz</strong></h1>
+            <div class="quiz-header">
+              <span class="header-score">Pontos: 0 / 5</span>
+            </div>
+            <h2 class="text-question"></h2>
+            <div class="option-list"></div>
+            <div class="quiz-footer">
+              <span class="question-total">1 de 5 Questões</span>
+              <button class="next-btn">Próximo</button>
+            </div>
+          </div>
+          <div class="result-box">
+            <h2>Você finalizou o Quiz!</h2>
+            <div class="percentage-container">
+              <div class="circular-progress">
+                <span class="progress-value">0%</span>
+              </div>
+              <span class="score-text">Seu Score é 0 de 5</span>
+            </div>
+            <div class="buttons">
+              <button class="tryAgain-btn">Tentar novamente</button>
+              <button class="goHome-btn">Voltar ao início</button>
+            </div>
+          </div>
+
+        </section>
+        <section class="home">
+          <div class="home-content">
+            <h1>Dev <strong>Quiz</strong></h1>
+            <p>
+              Bem-vindo ao DevQuiz! Mostre o que você sabe neste quiz interativo. Responda perguntas de vários temas, acumule pontos e veja o quão longe você consegue chegar. Boa sorte!
+            </p>
+            <button class="start-btn">Começar Quizz</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="popup-info">
+      <h2>Regras</h2>
+      <span class="info"
+        ><strong>1.</strong> Nada de Googlar! Teste seus conhecimentos de verdade.</span
+      >
+      <span class="info"
+        ><strong>2.</strong> Não é possível mudar a resposta após selecionar uma opção.</span
+      >
+      <span class="info"
+        ><strong>3.</strong> Divirta-se! O objetivo é aprender e se divertir, então relaxe e aproveite!</span
+      >
+    <div class="btn-group">
+        <button class="info-btn exit-btn">Sair</button>
+        <a href="#" class="info-btn continue-btn">Continuar</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+  </body>
+</html>
